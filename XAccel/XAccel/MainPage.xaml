@@ -4,8 +4,11 @@
              xmlns:local="clr-namespace:XAccel"
              x:Class="XAccel.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
-
+    <StackLayout>
+        <Label x:Name="xLabel" Text="x = " />
+        <Label x:Name="yLabel" Text="y = " />
+        <Label x:Name="zLabel" Text="z = " />
+        <Button Text="Start" Clicked="StartClicked"/>
+        <Button Text="Stop" Clicked="StopClicked"/>
+    </StackLayout>
 </ContentPage>
